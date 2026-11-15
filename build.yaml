@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        generate_for:
+          - lib/core/database/**.dart
+        options:
+          named_parameters: true
+          data_class_to_companions: true
